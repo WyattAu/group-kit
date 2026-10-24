@@ -1,0 +1,20 @@
+[package]
+name = "group-kit"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Multi-entity consolidation — intercompany matching that surfaces instead of guessing, eliminations that must cancel, same-currency first"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/WyattAu/group-kit"
+keywords = ["accounting", "consolidation", "finance", "intercompany"]
+categories = ["finance"]
+
+[dependencies]
+report-kit = "=0.2.1"
+double-entry = "=0.1.0"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+indexing_slicing = "deny"
+panic = "deny"
