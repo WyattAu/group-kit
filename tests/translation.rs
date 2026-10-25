@@ -14,8 +14,7 @@ use double_entry::money::currencies;
 use double_entry::{Account, JournalEntry, Ledger, Line};
 use fx_kit::Rate;
 use group_kit::{
-    IntercompanyPosition, TranslationError, TranslationRates, consolidate, into_trial_balance,
-    translate,
+    IntercompanyPosition, TranslationRates, consolidate, into_trial_balance, translate,
 };
 use report_kit::TrialBalance;
 use vat_rules::TieMode;
