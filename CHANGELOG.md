@@ -5,32 +5,26 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
-## [0.1.2] - 2026-10-24
-
-### Changed
-
-- Tracks `double-entry 0.1.1` (docs-only upstream release, identical API). Pin move keeps one version in a consumer graph that binds 0.1.1.
-
-
-## [0.1.1] - 2026-10-24
-
-### Changed
-
-- Tracks  (docs-only upstream release, identical API). Pin
-  move keeps one version in a consumer graph that binds 0.1.1.
-
-
-## [0.1.0] - 2026-10-24
-
-Initial release.
+## [0.2.0] - 2026-10-25
 
 ### Added
 
-- `consolidate` — entity trial balances plus intercompany positions to a
-  consolidated set of group rows.
-- Pairwise intercompany matching: a mirror with a disagreeing amount is an
-  `IntercompanyMismatch` naming both figures; a missing mirror is
-  `OneSidedIntercompany`. Neither is ever eliminated by guesswork.
-- Unbalanced entity books and foreign-currency entities are refused before
-  any elimination — two cancelling imbalances must not launder into a
-  balanced group.
+- `translate` — IAS 21 translation of a foreign subsidiary's books into the
+  group currency: assets and liabilities at the **closing** rate, income and
+  expenses at the **average** rate, equity at **historical** rates, and the
+  difference to a **translation reserve** within equity — not profit, which
+  is the sharp distinction from `fx-kit`'s monetary-item revaluation.
+- The reserve is a balancing figure by construction, and the tests pin it
+  against the theoretically-expected difference rather than trusting the
+  construction.
+- `into_trial_balance` — the translated books as a `TrialBalance`, feeding
+  `consolidate` directly. The full multi-currency group close is now
+  translate → consolidate, with the intercompany elimination still cancelling
+  across the exchange-rate boundary.
+- Multi-currency books, already-group-currency books, and any missing class
+  rate (named per class) are refused.
+
+## [0.1.0] - 2026-10-24
+
+Initial release: same-currency consolidation with surfaced intercompany
+disagreements.

@@ -42,6 +42,13 @@
 use double_entry::AccountType;
 use report_kit::TrialBalance;
 
+mod translation;
+
+pub use translation::{
+    TranslatedBooks, TranslatedRow, TranslationError, TranslationRates, into_trial_balance,
+    translate,
+};
+
 /// Why the group's accounts cannot be consolidated from these inputs.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ConsolidationError {
