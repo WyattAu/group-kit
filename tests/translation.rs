@@ -30,7 +30,7 @@ fn parent_tb() -> TrialBalance {
     ] {
         ledger.add_account(Account::new(id, name, kind));
     }
-    let mut v = ledger
+    ledger
         .post(
             &JournalEntry::draft(
                 "JE-P1",
@@ -67,10 +67,9 @@ fn parent_tb() -> TrialBalance {
                     ),
                 ],
             ),
-            v,
+            1,
         )
         .expect("posts");
-    let _ = v;
     TrialBalance::from_ledger(&ledger, "2026-12-31")
 }
 
