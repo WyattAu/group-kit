@@ -10,12 +10,10 @@ keywords = ["accounting", "consolidation", "finance", "intercompany"]
 categories = ["finance"]
 
 [dependencies]
-report-kit = "=0.2.2"
+report-kit = "=0.2.3"
 double-entry = "=0.1.1"
 fx-kit = "=0.1.2"
 vat-rules = "=0.1.1"
-report-kit = "=0.2.3"
-double-entry = "=0.1.1"
 
 [lints.clippy]
 unwrap_used = "deny"
