@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-10-27
+
+### Changed
+
+- Tracks `fx-kit 0.1.3` — the vat-rules-convergence pin, matching the graph. No behavioural change.
+
+
 ## [0.2.1] - 2026-10-27
 
 ### Changed
