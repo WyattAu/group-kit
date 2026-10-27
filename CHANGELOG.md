@@ -5,6 +5,13 @@ Changelog](https://keepachangelog.com/) — versions follow [semver](https://sem
 
 ## [Unreleased]
 
+## [0.2.3] - 2026-10-27
+
+### Changed
+
+- Tracks `fx-kit 0.1.4` (`Rate::parse_percent` for quoted percentages). No behavioural change.
+
+
 ## [0.2.2] - 2026-10-27
 
 ### Changed
