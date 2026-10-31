@@ -10,7 +10,7 @@ never guessed.** An intercompany position has two sides recorded in two sets
 of books. When both agree, the elimination removes both and the consolidated
 intercompany balance is zero. When they disagree in amount, or only one side
 was recorded, the consolidation *refuses to eliminate* and names the
-disagreement — eliminating the lender's figure unilaterally would silently
+disagreement; eliminating the lender's figure unilaterally would silently
 decide whose books are right, and a wrong elimination moves group profit while
 the elimination schedule still looks tidy.
 
@@ -29,7 +29,7 @@ credits, because an elimination removes equal amounts from both sides.
 
 **Same-currency consolidation.** Entities keeping books in other currencies
 restate into the group currency first (closing rates for monetary items,
-average for P&L) — translation is a separate upstream step with its own rules
+average for P&L); translation is a separate upstream step with its own rules
 and its own failures, and folding it into elimination would entangle them. A
 currency mix is refused, not translated.
 
