@@ -15,8 +15,16 @@ criteria = "safe-to-deploy"
 version = "0.1.4"
 criteria = "safe-to-deploy"
 
+[[exemptions.fx-kit]]
+version = "0.1.5"
+criteria = "safe-to-deploy"
+
 [[exemptions.group-kit]]
 version = "0.2.3"
+criteria = "safe-to-deploy"
+
+[[exemptions.group-kit]]
+version = "0.2.4"
 criteria = "safe-to-deploy"
 
 [[exemptions.report-kit]]
